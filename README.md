@@ -29,6 +29,7 @@ I have originally built this website with a Python Flask app structure and left 
 ```bash
 Website/
 ├── app.py
+├── index.html              # This is for GitHub Pages
 ├── static/
 │   ├── css/
 │       └── style.css
@@ -46,7 +47,7 @@ Website/
 │           ├── PCAP Certificate.png
 │           └── Tableau Data Analyst Cert.png
 ├── templates/
-│   └── index.html
+│   └── index.html          # This is for a Python Flask app website
 └── README.md 
 ```
 
@@ -57,7 +58,7 @@ Website/
 - Flask (Python)
 - Bootstrap
 
-## 💻 How to Run Locally
+## 💻 How to Run Locally via Flask
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/your-repo-name.git
@@ -82,7 +83,7 @@ Website/
 ![Preview](static/img/Preview.png)
 
 ## Live Demo
-Website here: 
+Website hosted here by GitHub Pages: 
 
 ## Author
 Nicholas Seah
