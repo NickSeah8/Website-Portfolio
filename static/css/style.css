@@ -47,6 +47,10 @@ h1, h2 {
     font-weight: normal;
 }
 
+#welcome-container {
+    position: relative;
+}
+
 .neon-btn {
     background-color: transparent;
     border: 2px solid #00ff00;
