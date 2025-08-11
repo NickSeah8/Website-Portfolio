@@ -83,9 +83,10 @@ Website/
 ![Preview](static/img/Preview.png)
 
 ## Live Demo
-Website hosted here by GitHub Pages: https://nickseah8.github.io/Website-Portfolio/
+Website hosted here by GitHub Pages:  
+https://nickseah8.github.io/Website-Portfolio/
 
 ## Author
-Nicholas Seah
+Nicholas Seah  
 [LinkedIn](https://www.linkedin.com/in/nicholas-seah8/) | [GitHub](https://github.com/NickSeah8)
 
