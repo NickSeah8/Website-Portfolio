@@ -58,7 +58,7 @@ Website/
 - Flask (Python)
 - Bootstrap
 
-## 💻 How to Run Locally via Flask
+## How to Run Locally via Flask
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/your-repo-name.git
