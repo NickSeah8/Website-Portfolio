@@ -20,7 +20,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="static/css/style.css">
 
 </head>
 <body>
@@ -68,7 +68,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 text-center" data-aos="fade-left">
-                    <img src="{{ url_for('static', filename='img/Nick1.jpeg') }}" alt="A picture of Nick Seah" class="img-fluid profile-pic">
+                    <img src="static/img/cert_badges/Nick1.jpeg" alt="A picture of Nick Seah" class="img-fluid profile-pic">
                 </div>
             </div>
         </div>
@@ -81,11 +81,11 @@
 
         <div class="row mt-5">
             <div class="col-md-12" data-aos="fade-down">
-                <img src="{{ url_for('static', filename='img/Nick2.png') }}" alt="Work experience picture 1" class="img-fluid work-pic">
+                <img src="static/img/cert_badges/Nick2.png" alt="Work experience picture 1" class="img-fluid work-pic">
             </div>
         </div>
 
-        <a href="{{ url_for('static', filename='resume/Nicholas Seah Resume.pdf') }}" target="_blank" class="btn neon-btn" data-aos="fade-up">Download Resume</a>
+        <a href="static/resume/Nicholas%20Seah%20Resume.pdf" target="_blank" class="btn neon-btn" data-aos="fade-up">Download Resume</a>
 
         <!-- Experience Cards -->
         <div class="experience-section mt-5">
@@ -139,13 +139,13 @@
         <!-- Certifications -->
         <div class="row mt-5">
             <div class="col-md-4" data-aos="flip-left">
-                <img src="{{ url_for('static', filename='img/Alteryx Core Cert.png') }}" class="img-fluid cert-img" alt="Alteryx Core Certification Badge">
+                <img src="static/img/cert_badges/Alteryx%20Core%20Cert.png" class="img-fluid cert-img" alt="Alteryx Core Certification Badge">
             </div>
             <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
-                <img src="{{ url_for('static', filename='img/PCAP Certificate.png') }}" class="img-fluid cert-img" alt="PCAP Certification Badge">
+                <img src="static/img/cert_badges/PCAP%20Certificate.png" class="img-fluid cert-img" alt="PCAP Certification Badge">
             </div>
             <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
-                <img src="{{ url_for('static', filename='img/Tableau Data Analyst Cert.png') }}" class="img-fluid cert-img" alt="Tableau Data Analyst Certification Badge">
+                <img src="static/img/cert_badges/Tableau%20Data%20Analyst%20Cert.png" class="img-fluid cert-img" alt="Tableau Data Analyst Certification Badge">
             </div>
         </div>
     </div>
@@ -157,7 +157,7 @@
             <h2 class="neon-text mb-4" data-aos="fade-down">Contact</h2>
             <div class="row align-items-center mt-5">
                 <div class="col-md-6" data-aos="fade-right">
-                    <img src="{{ url_for('static', filename='img/Nick3.jpg') }}" alt="Contact picture" class="img-fluid contact-pic">
+                    <img src="static/img/cert_badges/Nick3.jpg" alt="Contact picture" class="img-fluid contact-pic">
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
                     <div class="contact-info mb-4">
@@ -189,7 +189,7 @@
 
     <!-- FOOTER -->
     <footer class="text-center p-3 mt-5 border-top neon-text">
-        &copy; {{ year }} Nick Seah. All Rights Reserved.
+        &copy; <span id="year"></span> Nick Seah. All Rights Reserved.
     </footer>
 
     <!-- JS Libraries -->
@@ -197,7 +197,8 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init();
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="static/js/main.js"></script>
 </body>
 </html>
