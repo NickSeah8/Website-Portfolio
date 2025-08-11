@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Seah's Portfolio</title>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+
+    <canvas id="trail-canvas"></canvas>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-dark bg-black sticky-top">
+        <div class="container">
+            <a class="navbar-brand neon-text" href="#welcome">Nick</a>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link btn neon-btn" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link btn neon-btn" href="#work">Work</a></li>
+                <li class="nav-item"><a class="nav-link btn neon-btn" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- WELCOME -->
+    <section id="welcome" class="text-center p-5">
+        <div id="welcome-container" style="position: relative;">
+            <h1 class="display-3" data-aos="fade-down">Welcome</h1>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="p-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="neon-text" data-aos="fade-up">About Me</h2>
+                    <p data-aos="fade-up" data-aos-delay="200">
+                        My name is Nicholas Seah. I'm 25 years old and located in Sydney, although I grew up in a city around 2 hours north called Newcastle.
+                        After finishing high school, I attended the University of New South Wales where I studied a Bachelor of Arts and Business, with a major in Media and a minor in Global Development.
+                        <br> I began working as an Operations Coordinator in the cinema advertising firm Val Morgan, but after discovering an interest in data analytics (and finding myself in Europe for a couple months after quitting the advertising industry), I went back to university to complete a Master of Commerce, with a major in Business Analytics.
+                        <br> This led me to joining the Data School program with MIP Australia, where I began my career as a Data Analyst. While I was initially drawn to the industry by the wonders of data visualization and storytelling through charts and dashboards, it was here that I found my love for the backend side of data.
+                        I particularly enjoy writing and utilizing Python to read and extract data, transform and manipulate it, and output it depending on the need and use case. <br> It's for this reason that I particularly enjoy the end-to-end process of data pipelines and the use of cloud systems in modern enterprises.
+                        I am also proficient with the use of SQL to explore data and manage databases and data warehouses/lakes. 
+                        While I am aware of the dangers of AI, I enjoy learning and utilizing its' capabilities and understanding how it works, especially when it comes to LLMS, NLPs, and it's use in machine learning and regression models.
+                        <br> Outside of work, I follow and play a lot of different sports. Growing up I would try every sport there was available, but the main sport I focused on was Tennis. This lasted until I was about 14/15, which is when I pivoted and began to play Rugby Union. These days, I mainly play a lot of basketball, and I have played in a number of social leagues and regularly attend weekend pickup runs with some mates.
+                        <br> While I follow a lot of competitions such as the NRL, NFL and the F1, I am particularly passionate about the NBA. Following the NBA is how my interest in data was first piqued - I would spend hours reading game boxscores and looking up advanced statistics.
+                        The YouTube channel 'Thinking Basketball' was the final catalyst that led me to deciding data and sport were the intertwining points in my personal and professional life. The way he would break down the game using both analytics and knowledge of the sport got me very excited about the possibilities that lay ahead of me. 
+                        <br> Outside of sport, I also enjoy playing music, camping in nature, and other activities such as Skiing/Snowboarding, Surfing, Freediving and playing video games.
+                        <br> I'm always looking to further my abilities, which is why I created this website as a part of my resume. I hope you like it &#128512;
+                    </p>
+                </div>
+                <div class="col-md-6 text-center" data-aos="fade-left">
+                    <img src="{{ url_for('static', filename='img/Nick1.jpeg') }}" alt="A picture of Nick Seah" class="img-fluid profile-pic">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- WORK EXPERIENCE -->
+<section id="work" class="p-5 work-section">
+    <div class="container text-center">
+        <h2 class="neon-text mb-4" data-aos="fade-right">Work Experience</h2>
+
+        <div class="row mt-5">
+            <div class="col-md-12" data-aos="fade-down">
+                <img src="{{ url_for('static', filename='img/Nick2.png') }}" alt="Work experience picture 1" class="img-fluid work-pic">
+            </div>
+        </div>
+
+        <a href="{{ url_for('static', filename='resume/Nicholas Seah Resume.pdf') }}" target="_blank" class="btn neon-btn" data-aos="fade-up">Download Resume</a>
+
+        <!-- Experience Cards -->
+        <div class="experience-section mt-5">
+            
+            <!-- External Contract -->
+            <div class="experience-card external" data-aos="fade-up">
+                <h3>Data Analytics Consultant – Sunwest Dry Cleaning (Contract)</h3>
+                <p class="location-date">Remote | July 2025 – August 2025</p>
+                <ul>
+                    <li>PDF Data Extraction & Visualization Project</li>
+                </ul>
+            </div>
+
+            <!-- MIP Main Role -->
+            <div class="experience-card" data-aos="fade-up">
+                <h3>Associate Consultant – MIP Australia Pty Ltd</h3>
+                <p class="location-date">Sydney, NSW | April 2024 – Present</p>
+
+                <div class="sub-project">
+                    <h4>Data Analytics Consultant – Pacific National (MIP Contract)</h4>
+                    <p class="location-date">Remote | May 2025 – June 2025</p>
+                    <ul>
+                        <li>Tableau Server Environment Upgrade</li>
+                    </ul>
+                </div>
+
+                <div class="sub-project">
+                    <h4>Data Analytics Consultant – VetPartners (MIP Contract)</h4>
+                    <p class="location-date">Remote | October 2024 – April 2025</p>
+                    <ul>
+                        <li>Data Migration Project</li>
+                    </ul>
+                </div>
+
+                <div class="sub-project">
+                    <h4>Data Analytics Consultant – RMIT (MIP Contract)</h4>
+                    <p class="location-date">Remote | July 2024 – October 2024</p>
+                    <ul>
+                        <li>Data Migration Project</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Earlier Role -->
+            <div class="experience-card valmorgan" data-aos="fade-up">
+                <h3>Operations Coordinator / Sales Graduate – The Val Morgan Group</h3>
+                <p class="location-date">Sydney, NSW | April 2022 – June 2023</p>
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="row mt-5">
+            <div class="col-md-4" data-aos="flip-left">
+                <img src="{{ url_for('static', filename='img/Alteryx Core Cert.png') }}" class="img-fluid cert-img" alt="Alteryx Core Certification Badge">
+            </div>
+            <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+                <img src="{{ url_for('static', filename='img/PCAP Certificate.png') }}" class="img-fluid cert-img" alt="PCAP Certification Badge">
+            </div>
+            <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
+                <img src="{{ url_for('static', filename='img/Tableau Data Analyst Cert.png') }}" class="img-fluid cert-img" alt="Tableau Data Analyst Certification Badge">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="p-5">
+        <div class="container text-center">
+            <h2 class="neon-text mb-4" data-aos="fade-down">Contact</h2>
+            <div class="row align-items-center mt-5">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="{{ url_for('static', filename='img/Nick3.jpg') }}" alt="Contact picture" class="img-fluid contact-pic">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="contact-info mb-4">
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:nseah8@gmail.com">nseah8@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> Phone: +61 488 005 421</p>
+                </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 d-grid">
+                                <a href="https://www.linkedin.com/in/nicholas-seah8/" target="_blank" rel="noopener" class="btn neon-btn mb-3">LinkedIn</a>
+                            </div>
+                            <div class="col-6 d-grid">
+                                <a href="https://github.com/NickSeah8" target="_blank" rel="noopener" class="btn neon-btn mb-3">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 d-grid">
+                                <a href="https://public.tableau.com/app/profile/nicholas.seah/vizzes" target="_blank" rel="noopener" class="btn neon-btn">Tableau</a>
+                            </div>
+                            <div class="col-6 d-grid">
+                                <a href="https://www.novypro.com/profile_about/nicholas-seah" target="_blank" rel="noopener" class="btn neon-btn">NovyPro</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center p-3 mt-5 border-top neon-text">
+        &copy; {{ year }} Nick Seah. All Rights Reserved.
+    </footer>
+
+    <!-- JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

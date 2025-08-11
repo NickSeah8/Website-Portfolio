@@ -1,0 +1,235 @@
+body {
+    background: url('../img/northern_lights.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: auto;
+    overflow-x: hidden;
+    margin: 0;
+    position: relative;
+}
+
+.sparkle {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #FFD700;
+    pointer-events: none;
+    animation: sparkle-animation 1s forwards;
+    text-shadow: 0 0 5px #FFD700;
+}
+
+@keyframes sparkle-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+.neon-text {
+    color: #fff;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+
+#welcome h1 {
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: normal;
+}
+
+.neon-btn {
+    background-color: transparent;
+    border: 2px solid #00ff00;
+    color: #fff;
+    border-radius: 50px;
+    padding: 0.6em 1.5em;
+    transition: box-shadow 0.2s, color 0.2s;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+.neon-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    background-color: rgba(0, 255, 0, 0.1);
+    color: #00ff00;
+}
+
+.cert-img {
+    max-height: 200px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+    margin: 10px;
+}
+
+#trail-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+section, footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    padding: 5rem 0;
+}
+
+footer {
+    border-top: none !important;
+    padding-bottom: 5rem; /* Ensure footer has enough padding */
+}
+
+#welcome {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-color: transparent !important;
+}
+
+#welcome.fade-in {
+    opacity: 1;
+}
+
+#about {
+    margin-bottom: 5rem;
+}
+
+.profile-pic {
+    border: none;
+    background-color: transparent !important;
+    object-fit: contain;
+    margin-left: 20px;
+}
+
+.work-pic {
+    max-height: 250px;
+    margin-bottom: 20px;
+}
+
+.contact-pic {
+    max-height: 350px;
+}
+
+.work-section .btn, .work-section p, .work-section .work-pic {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.experience-section {
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/* Base card */
+.experience-card {
+    background: rgba(20, 20, 30, 0.85);
+    border-left: 4px solid #00f0ff; /* Default MIP color */
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.experience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.8);
+}
+
+/* External contract (Sunwest) */
+.experience-card.external {
+    border-left-color: #ff00ff;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.4);
+}
+.experience-card.external:hover {
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
+}
+.experience-card.external h3 {
+    color: #ff00ff;
+}
+.experience-card.external ul li::before {
+    color: #ff00ff;
+}
+
+/* Val Morgan role */
+.experience-card.valmorgan {
+    border-left-color: #ff9900; /* Neon orange */
+    box-shadow: 0 0 10px rgba(255, 153, 0, 0.4);
+}
+.experience-card.valmorgan:hover {
+    box-shadow: 0 0 15px rgba(255, 153, 0, 0.8);
+}
+.experience-card.valmorgan h3 {
+    color: #ff9900;
+}
+.experience-card.valmorgan ul li::before {
+    color: #ff9900;
+}
+
+/* Headings */
+.experience-card h3 {
+    font-size: 1.25rem;
+    color: #00f0ff; /* Default for MIP */
+    margin-bottom: 0.3rem;
+}
+.sub-project h4 {
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+/* Dates & bullet styling */
+.location-date {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+.experience-card ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+.experience-card ul li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+.experience-card ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #00f0ff; /* Default bullet color for MIP */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .experience-card {
+        padding: 1rem;
+    }
+    .experience-card h3 {
+        font-size: 1.1rem;
+    }
+    .sub-project h4 {
+        font-size: 0.95rem;
+    }
+}
