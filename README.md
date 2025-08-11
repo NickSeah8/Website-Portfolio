@@ -7,7 +7,7 @@
 [![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)]()
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white)]()
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Online-brightgreen?style=flat-square)](https://yourusername.github.io)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Online-brightgreen?style=flat-square)](https://nickseah8.github.io/Website-Portfolio/)
 
 This is my personal resume portfolio website built using **HTML**, **CSS**, **JavaScript**, and **Flask**. 
 This website provides details on who I am, the work I have done, my certifications, and my contact information in an interactive, responsive and neon layout.
