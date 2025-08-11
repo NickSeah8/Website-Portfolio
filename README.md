@@ -11,6 +11,7 @@
 
 This is my personal resume portfolio website built using **HTML**, **CSS**, **JavaScript**, and **Flask**. 
 This website provides details on who I am, the work I have done, my certifications, and my contact information in an interactive, responsive and neon layout.
+I have originally built this website with a Python Flask app structure and left the relevant files (and folder structure) for those who wish to use this website as a template skeleton for their own Flask website. However, I have also ensured it can be hosted on GitHub Pages by making a copy of the HTML file in the main folder.
 
 ## Features
 - Neon-themed UI with hover effects and animations.
