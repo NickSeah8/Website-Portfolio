@@ -34,6 +34,8 @@
             <ul class="nav">
                 <li class="nav-item"><a class="nav-link btn neon-btn" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link btn neon-btn" href="#work">Work</a></li>
+                <li class="nav-item"><a class="nav-link btn neon-btn" href="#dashboards">Dashboards</a></li>
+                <li class="nav-item"><a class="nav-link btn neon-btn" href="#music">Music</a></li>
                 <li class="nav-item"><a class="nav-link btn neon-btn" href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -41,7 +43,7 @@
 
     <!-- WELCOME -->
     <section id="welcome" class="text-center p-5">
-        <div id="welcome-container" style="position: relative;">
+        <div id="welcome-container">
             <h1 class="display-3" data-aos="fade-down">Welcome</h1>
         </div>
     </section>
@@ -139,17 +141,145 @@
         <!-- Certifications -->
         <div class="row mt-5">
             <div class="col-md-4" data-aos="flip-left">
-                <img src="{{ url_for('static', filename='img/Alteryx Core Cert.png') }}" class="img-fluid cert-img" alt="Alteryx Core Certification Badge">
+                <img src="{{ url_for('static', filename='img/alteryx-core-cert.png') }}" class="img-fluid cert-img" alt="Alteryx Core Certification Badge">
             </div>
             <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
-                <img src="{{ url_for('static', filename='img/PCAP Certificate.png') }}" class="img-fluid cert-img" alt="PCAP Certification Badge">
+                <img src="{{ url_for('static', filename='img/PCAP-cert.png') }}" class="img-fluid cert-img" alt="PCAP Certification Badge">
             </div>
             <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
-                <img src="{{ url_for('static', filename='img/Tableau Data Analyst Cert.png') }}" class="img-fluid cert-img" alt="Tableau Data Analyst Certification Badge">
+                <img src="{{ url_for('static', filename='img/tableau-data-analyst-cert.png') }}" class="img-fluid cert-img" alt="Tableau Data Analyst Certification Badge">
             </div>
         </div>
     </div>
 </section>
+
+<!-- DASHBOARDS -->
+<section id="dashboards">
+    <div class="container">
+        <h2 class="neon-text mb-4" data-aos="fade-down">Tableau Dashboards</h2>
+        <p data-aos="fade-up">Here are some of the dashboards I have created as a bit of fun and uploaded to Tableau Public, as well as my resume dashboard for MIP.
+        <br> Feel free to interact with them!</p>
+        <div class="row">
+
+            <!-- Dashboard 1 -->
+            <div class="col-lg-12 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="neon-text">MIP/Data School Resume</h3>
+                <div class="tableauPlaceholder tableau-embed" id="viz1">
+                    <noscript>
+                        <a href="#">
+                            <img alt="MIP/Data School Resume" src="https://public.tableau.com/static/images/DS/DSTableauCVNickSeah/DataSchoolResume/1_rss.png" />
+                        </a>
+                    </noscript>
+                    <object class="tableauViz">
+                        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+                        <param name="embed_code_version" value="3" />
+                        <param name="site_root" value="" />
+                        <param name="name" value="DSTableauCVNickSeah/DataSchoolResume" />
+                        <param name="tabs" value="no" />
+                        <param name="toolbar" value="yes" />
+                        <param name="static_image" value="https://public.tableau.com/static/images/DS/DSTableauCVNickSeah/DataSchoolResume/1.png" />
+                        <param name="animate_transition" value="yes" />
+                        <param name="display_static_image" value="yes" />
+                        <param name="display_spinner" value="yes" />
+                        <param name="display_overlay" value="yes" />
+                        <param name="display_count" value="yes" />
+                        <param name="language" value="en-US" />
+                    </object>
+                </div>
+            </div>
+
+            <!-- Dashboard 2 -->
+            <div class="col-lg-12 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="neon-text">NBA Three Point Revolution</h3>
+                <div class="tableauPlaceholder tableau-embed" id="viz2">
+                    <noscript>
+                        <a href="#">
+                            <img alt="NBA Three Point Revolution" src="https://public.tableau.com/static/images/NB/NBATheThreePointRevolution/FinalDashboard/1_rss.png" />
+                        </a>
+                    </noscript>
+                    <object class="tableauViz">
+                        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+                        <param name="embed_code_version" value="3" />
+                        <param name="site_root" value="" />
+                        <param name="name" value="NBATheThreePointRevolution/FinalDashboard" />
+                        <param name="tabs" value="no" />
+                        <param name="toolbar" value="yes" />
+                        <param name="static_image" value="https://public.tableau.com/static/images/NB/NBATheThreePointRevolution/FinalDashboard/1.png" />
+                        <param name="animate_transition" value="yes" />
+                        <param name="display_static_image" value="yes" />
+                        <param name="display_spinner" value="yes" />
+                        <param name="display_overlay" value="yes" />
+                        <param name="display_count" value="yes" />
+                        <param name="language" value="en-US" />
+                    </object>
+                </div>
+            </div>
+
+            <!-- Dashboard 3 -->
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="neon-text">Rocket League Data Night</h3>                
+                <div class="tableauPlaceholder tableau-embed" id="viz3">
+                    <noscript>
+                        <a href="#">
+                            <img alt="Rocket League Data Night" src="https://public.tableau.com/static/images/Ro/RocketLeagueDataNight/IndividualBreakdown/1_rss.png" />
+                        </a>
+                    </noscript>
+                    <object class="tableauViz">
+                        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+                        <param name="embed_code_version" value="3" />
+                        <param name="site_root" value="" />
+                        <param name="name" value="RocketLeagueDataNight/IndividualBreakdown" />
+                        <param name="tabs" value="no" />
+                        <param name="toolbar" value="yes" />
+                        <param name="static_image" value="https://public.tableau.com/static/images/Ro/RocketLeagueDataNight/IndividualBreakdown/1.png" />
+                        <param name="animate_transition" value="yes" />
+                        <param name="display_static_image" value="yes" />
+                        <param name="display_spinner" value="yes" />
+                        <param name="display_overlay" value="yes" />
+                        <param name="display_count" value="yes" />
+                        <param name="language" value="en-US" />
+                    </object>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Load your JS at the end of the body -->
+<script src="path/to/main.js"></script>
+</body>
+
+    <!-- MUSIC -->
+    <section id="music" class="p-5">
+        <div class="container">
+            <h2 class="neon-text text-center mb-4" data-aos="fade-down">My Music</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <p>
+                        Music has been a passion of mine since I was young. I have numerous playlists of songs for all different types of moods, weather and times of the day. Spotify might be my most used app across my lifetime! 
+                        <br> I really enjoy the art of playing and creating music. I initially started when I was young with the piano, before moving on to violin and playing in my school's symphony orchestra. After discovering a particular love for rock and pop punk music, I picked up the guitar and also learnt how to play the bass guitar and drums.
+                        <br> However, I found my favourite instrument involved using my own vocals to sing my favourite songs. I've always held an appreciation for interesting lyrical content that provokes thoughtful meaning, promotes important and universal themes, and utilizes clever and interesting analogies. Basically, all the lessons I learnt in English class back in school inspired my desire for lyrics that go beyond what basic pop songs tend to be about.
+                        <br> Some of my favourite bands include Fall Out Boy and Panic at the Disco - their long song titles and interesting lyrics captured my attention as a teenager. Other pop punk bands I enjoy include my two favourite bands All Time Low and 5 Seconds of Summer, as well as classics such as Green Day, Paramore, and Blink 182. Recently, I have been listening to alot of The Maine, The Band Camino and State Champs.
+                        <br> I have always considered myself a fan of all different types of genres. Oldschool rap such as Eminem, Dr Dre and Snoop Dogg have always captured my attention, as well as newer rap styles that verge on emo, with artists such as Lil Tjay, Cordae, Lil Uzi Vert and the Kid Laroi being some of my favourites. Other hip hop artists I also really enjoy include Action Bronson, J Cole and Drake.
+                        <br> I spent alot of my 2023 trip to Europe finding quaint jazz bars to enjoy a whiskey and some jazz music, particularly 1920s to 1940s jazz. Indie artists such as Matt Hansen and Noah Kahan have greatly inspirted my own music craft, and electro music such as The Chainsmokers, Purple Disco Machine, and Illenium have captured my attention since I began to discover the party lifestyle at 18. Most recently, I've been very into country music, and have been listening to artists such as Luke Combs, Bailey Zimmerman, and Morgan Wallen.
+                        <br> Since I was 15, I have been writing my own music. Over the years, I've taken inspiration from all the different genres I listen to, and whatever my favourite songs are at that current stage. Having played in various different rock bands throughout high school, I have always gravitated to a high distortion, punk kind of style when playing live and when originally writing, but I have always tried to incorporate a different inspiration into each of the original songs I create.
+                        <br> I have made a playlist with all the original songs I have made over the years and uploaded to Spotify across different artist profiles. I have also shared a playlist with all my current favourite songs - if you are interested, the link to my Spotify profile is below, where you can find all my other playlists I have created. I hope you enjoy it!
+                    </p>
+                    <a href="https://open.spotify.com/user/12100914818?si=a0b772682b6642eb" target="_blank" rel="noopener" class="btn neon-btn">My Spotify Profile</a>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <iframe class="spotify-embed" 
+                            data-src="https://open.spotify.com/embed/playlist/7eROzw9VNx5cdtQXvHk1i1?utm_source=generator" 
+                            width="100%" height="500" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Spotify Playlist of My Music">
+                        </iframe>
+                    <iframe class="spotify-embed" 
+                            data-src="https://open.spotify.com/embed/playlist/0KBOPbUSsxUEI5PR3qpENA?utm_source=generator" 
+                            width="100%" height="500" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Spotify Playlist of My Music">
+                        </iframe>             
+            </div>
+        </div>
+    </section>
 
     <!-- CONTACT -->
     <section id="contact" class="p-5">

@@ -51,6 +51,18 @@ h1, h2 {
     position: relative;
 }
 
+.spotify-embed {
+    border-radius: 12px;
+}
+
+.spotify-embed + .spotify-embed {
+    margin-top: 30px;
+}
+
+.tableau-embed {
+    position: relative;
+}
+
 .neon-btn {
     background-color: transparent;
     border: 2px solid #00ff00;
@@ -236,4 +248,55 @@ footer {
     .sub-project h4 {
         font-size: 0.95rem;
     }
+}
+
+/* Section styling */
+#dashboards, #music {
+    padding: 5rem 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+#dashboards {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+#dashboards h2.neon-text {
+    margin-bottom: 1.5rem;
+}
+
+#dashboards .tableauPlaceholder {
+    border-radius: 8px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden; /* Ensures the rounded corners are applied to the embedded content */
+}
+
+.tableauPlaceholder .tableauViz {
+    display: none;
+    width: 100%;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .tableauPlaceholder .tableauViz {
+        width: 100%;
+    }
+}
+
+#music p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Add spacing between transparent section backgrounds */
+#music {
+    margin-top: 5rem;
+}
+
+#contact {
+    margin-top: 5rem;
 }
